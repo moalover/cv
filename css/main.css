@@ -1,0 +1,113 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/*.page-content{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 85px;
+}*/
+
+#my_name{
+	font-family: 'Bree Serif', cursive;
+}
+
+#navbar-collapsed-dropdown a:visited{
+	color: #ffffff;
+	text-decoration: none;
+}
+#navbar-collapsed-dropdown .active>a:visited, #navbar-collapsed-dropdown .open>a:visited{
+	color: rgba(79,39,176,1);
+}
+
+#bannerLogo{
+	height: 50px;
+    /*border: 2px solid#ffffff;
+    border-radius: 26px;
+    padding: 5px;*/
+}
+
+.emoji{
+	font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+#me1{
+	width: 100%;
+}
+
+#intro-container{
+	height: 3000px;
+}
+
+#intro h1, #intro h2{
+	text-align: center;
+}
+
+#intro h2{
+	color: #000000;
+}
+
+.language-flag{
+	height: 15px;
+}
+
+
+
+
+#bio-container{
+	background-color: black;
+	background-image: url("../img/caracas.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover
+}
+
+#bio-container #bio{
+	padding-top: 85px;
+}
+
+#education-container{
+	background-color: black;
+	background-image: url("../img/USB.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover
+}
+
+#experience-container, #education-dummy-container{
+	background-color: black;
+	background-image: url("../img/office.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover
+}
+
+#experience-container #bio{
+	padding-top: 85px;
+}
+
+.datagrid{
+	background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff
+}
+
+.datagrid .datagrid_element{
+	border-right: 1px solid #ffffff;
+}
+
+.datagrid .datagrid_element:last-of-type{
+	border-right: none;
+}
+
+.my_spacer{
+	height: 25px;
+}
