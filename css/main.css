@@ -89,11 +89,17 @@
 /* ----------------------- BIO - Start ------------------------ */
 
 #bio-container{
-	background-color: black;
-	background-image: url("../img/caracas.jpg");
+	background-color: #000000;
+	background-image: url("../img/caracas_mobile.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+}
+
+@media (min-width: 768px) {
+	#bio-container{
+		background-image: url("../img/caracas.jpg");
+	}
 }
 
 #bio-container #bio{
@@ -106,11 +112,17 @@
 /* -------------------- EDUCATION - Start --------------------- */
 
 #education-container{
-	background-color: black;
-	background-image: url("../img/USB.jpg");
+	background-color: #4dff4d;
+	background-image: url("../img/USB_mobile.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+}
+
+@media (min-width: 768px) {
+	#education-container{
+		background-image: url("../img/USB.jpg");
+	}
 }
 
 #education-container #education{
@@ -123,11 +135,17 @@
 /* ------------------- EXPERIENCE - Start --------------------- */
 
 #experience-container{
-	background-color: black;
-	background-image: url("../img/office.jpg");
+	background-color: #ffffff;
+	background-image: url("../img/office_mobile.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+}
+
+@media (min-width: 768px) {
+	#experience-container{
+		background-image: url("../img/office.jpg");
+	}
 }
 
 #experience-container #experience{
@@ -156,11 +174,17 @@
 /* -------------------- EDUCATION - Start --------------------- */
 
 #hobbies-container{
-	background-color: black;
-	background-image: url("../img/margarita.jpg");
+	background-color: #00ccff;
+	background-image: url("../img/margarita_mobile.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+}
+
+@media (min-width: 768px) {
+	#experience-container{
+		background-image: url("../img/margarita.jpg");
+	}
 }
 
 #hobbies-container #hobbies{
