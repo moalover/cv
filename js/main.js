@@ -19,12 +19,13 @@ function calculateYearsSince(birthMonth, birthDay, birthYear)
 }
 
 $(function(){
-	$("#education-container").height($("#education .row:first").height());
-	$("#education-dummy-container").height($("#education-container").height());
 
-	$('#navbar-collapsed-dropdown a').click(function(e){
+	$('#navbar-collapsed-dropdown .navigator-link a').click(function(e){
 		e.preventDefault();
 		var offset = parseInt($(this).data('offset'));
+		if (isNaN(offset)){
+			offset = 0;
+		}
 		$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top + offset}, 1500);
 	})
 
@@ -118,35 +119,43 @@ $(function(){
 
 
 	//---------------------------------- EDUCATION SCENE - Start ------------------------------------
-	/*var educationScene = new ScrollMagic.Scene({
-	    duration: 1000,
+	var educationScene = new ScrollMagic.Scene({
+	    duration: $("#education-container").height(),
 	    triggerElement: "#education-container",
 	    triggerHook: 1
 	});
-	educationScene.setTween("#education", 2, {"left": "0"});
 	educationScene.addTo(controller); 
 	educationScene.on("enter", function (e) {
 		$('#navbar-collapsed-dropdown ul li.active').removeClass("active");
 		$('#navbar-collapsed-dropdown ul li a[href="#education-container"]').closest('li').addClass("active");
 	});
 	//---------------------------------- EDUCATION SCENE -  End  ------------------------------------
-	//------------------------------- EDUCATION SCROLL SCENE - Start --------------------------------
-	var educationScrollScene = new ScrollMagic.Scene({
-	    duration: $("#education .row:first").height(),
-	    offset: 1000,
-	    triggerElement: "#education-container",
+
+
+	//--------------------------------- EXPERIENCE SCENE - Start ------------------------------------
+	var experienceScene = new ScrollMagic.Scene({
+	    duration: $("#experience-container").height(),
+	    triggerElement: "#experience-container",
 	    triggerHook: 1
 	});
-	educationScrollScene.setTween("#education", 2, {"top": -$("#education .row:first").height()});
-	educationScrollScene.addTo(controller); 
-	//------------------------------- EDUCATION SCROLL SCENE -  End  --------------------------------
-	//------------------------------- EDUCATION SCROLL SCENE - Start --------------------------------
-	var educationLeaveScene = new ScrollMagic.Scene({
-	    duration: 1000,
-	    triggerElement: "#education-dummy-container",
-	    triggerHook: 0
+	experienceScene.addTo(controller); 
+	experienceScene.on("enter", function (e) {
+		$('#navbar-collapsed-dropdown ul li.active').removeClass("active");
+		$('#navbar-collapsed-dropdown ul li a[href="#experience-container"]').closest('li').addClass("active");
 	});
-	educationLeaveScene.setTween("#education", 2, {"left": 5000});
-	educationLeaveScene.addTo(controller);*/
-	//------------------------------- EDUCATION SCROLL SCENE -  End  --------------------------------
+	//---------------------------------- EDUCATION SCENE -  End  ------------------------------------
+
+	//---------------------------------- HOBBIES SCENE - Start --------------------------------------
+	var hobbiesScene = new ScrollMagic.Scene({
+	    duration: $("#hobbies-container").height(),
+	    triggerElement: "#hobbies-container",
+	    triggerHook: 1
+	});
+	hobbiesScene.addTo(controller); 
+	hobbiesScene.on("enter", function (e) {
+		$('#navbar-collapsed-dropdown ul li.active').removeClass("active");
+		$('#navbar-collapsed-dropdown ul li a[href="#hobbies-container"]').closest('li').addClass("active");
+	});
+	//----------------------------------- HOBBIES SCENE -  End  --------------------------------------
+	
 });

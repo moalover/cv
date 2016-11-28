@@ -35,31 +35,27 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="navbar-collapsed-dropdown">
 	    	<ul class="nav navbar-nav">
-		        <li class="active"><a href="#intro-container" data-offset="0">Principal</a></li>
-		        <li><a href="#bio-container" data-offset="0">Bio</a></li>
-		        <li><a href="#education-container" data-offset="1000">Educación</a></li>
-		        <li><a href="#">Experiencia</a></li>
-		        <li><a href="#">Logros</a></li>
-		        <li><a href="#">Hobbies</a></li>
+		        <li class="active navigator-link"><a href="#intro-container" data-offset="0">Principal</a></li>
+		        <li class="navigator-link"><a href="#bio-container" data-offset="0">Bio</a></li>
+		        <li class="navigator-link"><a href="#education-container" data-offset="0">Educación</a></li>
+		        <li class="navigator-link"><a href="#experience-container" data-offset="0">Experiencia</a></li>
+		        <li class="navigator-link"><a href="#hobbies-container" data-offset="0">Hobbies</a></li>
 	    	</ul>
 	      
 	    	<ul class="nav navbar-nav navbar-right">
 		        <li class="dropdown">
 		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-language" aria-hidden="true"></i> Idioma <span class="caret"></span></a>
 		        	<ul class="dropdown-menu">
-			            <li><a href="#"><img class="language-flag" src="img/spanish.jpg"/> Eng</a></li>
-			            <li><a href="#"><img class="language-flag" src="img/english.jpg"/> Spa</a></li>
+			            <!--<li><a href="?lang=en"><img class="language-flag" src="img/english.jpg"/> Eng</a></li>-->
+			            <li><a href="?lang=es"><img class="language-flag" src="img/spanish.jpg"/> Spa</a></li>
 		        	</ul>
 		        </li>
 		        <li class="dropdown">
 		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Contactos <span class="caret"></span></a>
 		        	<ul class="dropdown-menu">
-		        		<li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i> Móvil</a></li>
-			            <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-			            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
-			            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-			            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-			            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+		        		<li><a href="mailto:ing.jorgeu@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+			            <li><a target="_blank" href="http://www.linkedin.com/in/ing-jorge-urbina"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+			            <li><a target="_blank" href="https://www.facebook.com/George258"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
 		        	</ul>
 		        </li>
 	    	</ul>
@@ -340,16 +336,8 @@
 							</li>
 						</ul>
 					</div>
-				</div>
-				
-
-
-
+				</div>		
 			</div>
-    	</div>
-    </div>
-    <div id="education-dummy-container">
-    	<div id="education-dummy" class="container page-content">
     	</div>
     </div>
 
@@ -358,73 +346,178 @@
     	<div id="experience" class="container page-content">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>Bio</h1>
+					<h1>Experiencia</h1>
 				</div>
-				<div class="my_spacer"></div>
+				<div class="col-xs-12">
+					<h2>No profesional</h2>
+				</div>
+				<div class="col-xs-12 my_spacer"></div>
 				<div class="col-xs-12 datagrid">
+					<div class="col-md-4 col-xs-12 datagrid_element text-center hidden-xs">
+						<strong>Cargo</strong>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center hidden-xs">
+						<strong>Lugar</strong>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center hidden-xs noborder">
+						<strong>Duración</strong>
+					</div>
+
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+
 					<div class="col-md-4 col-xs-12 datagrid_element text-center">
-						<strong>Edad:</strong> <span id="my_age">28</span> años
+						Preparador
 					</div>
 					<div class="col-md-4 col-xs-12 datagrid_element text-center">
-						<strong>Sexo:</strong> <span id="my_gender">Hombre</span>
+						en <a href="http://www.bib.usb.ve/">Biblioteca USB</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Abril 2007 a septiembre 2007
+					</div>
+					
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+
+					<div class="col-md-4 col-xs-12 datagrid_element text-center ">
+						Operador
 					</div>
 					<div class="col-md-4 col-xs-12 datagrid_element text-center">
-						<strong>Experiencia:</strong> <span id="my_experience">4</span> años
+						en Proveeduría Estudiantil <a href="http://www.usb.ve/">USB</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Septiembre 2007 a marzo 2010
+					</div>
+					
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Asistende de Recursos Humanos
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						en Proveeduría Estudiantil <a href="http://www.usb.ve/">USB</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Abril 2010 a julio 2010
+					</div>
+					
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Supervisor
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						en Proveeduría Estudiantil <a href="http://www.usb.ve/">USB</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Julio 2010 a diciembre 2010
+					</div>
+					
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Coordinador
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						en Proveeduría Estudiantil <a href="http://www.usb.ve/">USB</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Enero 2011 a julio 2011
 					</div>
 				</div>
-				<div class="my_spacer col-xs-12"></div>
+
+				<div class="col-xs-12">
+					<h2>Profesional</h2>
+				</div>
+				<div class="col-xs-12 my_spacer"></div>
 				<div class="col-xs-12 datagrid">
-					<div class="col-md-6 col-xs-12 text-justify">
-						<h2>Mis orígenes</h2>
-						<p>
-							Nací un 25 de diciembre de 1988 en la Maternidad Concepción Palacios ubicada en Caracas, Venezuela, sin embargo, he vivido la mayor parte de mi vida en Los Teques, a tan solo dos horas de la capital, una ciudad conocida en sus tiempos por su clima frío y sus ricos <a href="//es.wikipedia.org/wiki/Golfeado" class="important" target="_blank">golfeados</a>.
-						</p>
-						
+					<div class="col-md-4 col-xs-12 datagrid_element text-center hidden-xs">
+						<strong>Cargo</strong>
 					</div>
-					<div class="col-md-6 col-xs-12">
-						<img src="img/los-teques.png" style="width: 100%;"/>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center hidden-xs">
+						<strong>Lugar</strong>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center hidden-xs noborder">
+						<strong>Duración</strong>
+					</div>
+
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+					
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Developer
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						<a href="http://www.passarinisuarez.com/">Passarini Suárez C.A.</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Abril 2013 a febrero 2014
+					</div>
+
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+					
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Developer
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Globinsoft C.A.
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Febrero 2014 a agosto 2015
+					</div>
+
+					<div class="col-xs-12 visible-xs my_spacer"></div>
+					
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						Web Developer
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center">
+						<a href="http://neuvoo.com/">neuvoo</a>
+					</div>
+					<div class="col-md-4 col-xs-12 datagrid_element text-center noborder">
+						Agosto 2015 a este fecha
 					</div>
 				</div>
-				<div class="my_spacer col-xs-12"></div>
-				<div class="col-xs-12 datagrid">
-					<div class="col-md-6 col-xs-12">
-						<img src="img/formation.jpg" style="width: 100%;"/>
-					</div>
-					<div class="col-md-6 col-xs-12 text-justify">
-						<h2>Mi formación</h2>
-						<p>
-							Habiendo crecido en la calidez de un hogar católico, desde pequeño inculcaron buenos valores: de mis abuelos aprendí qué es el <span class="important">trabajo duro</span> y la <span class="important">humildad</span>, de mi madre aprendí sobre la <span class="important">perseverancia</span>, la <span class="important">paciencia</span> y la <span class="important">responsabilidad</span>, además, habiendo crecido como el menor de 4 hermanos aprendí a <span class="important">adaptarme</span> en un ambiente con sana <span class="important">competitividad</span>.
-						</p>
-						<p>
-							Años después al perseguir mis intereses profesionales y obtener mi título como Ingeniero en Computación tuve que desarrollar otras habilidades, como la capacidad de <span class="important">desempeñarme bajo presión</span>, <span class="important">aprendizaje eficiente</span>, <span class="important">trabajar en equipo</span> y <span class="important">realizar proyectos con fechas límite de entrega</span>. Además, Viviendo a 2 horas de mi universidad y teniendo que llevar en paralelo mis estudios con empleos a medio tiempo como estudiante me han permitido aprender a <span class="important">manejar eficientemente el tiempo</span>. 
-						</p>
-					</div>
-				</div>
-				<div class="my_spacer col-xs-12"></div>
-				<div class="col-xs-12 datagrid">
-					<div class="col-md-6 col-xs-12 text-justify">
-						<h2>Mi pasión por la tecnología y la música</h2>
-						<p>
-							El hombre es sin lugar a duda una criatura muy particular, cuya rareza, aunque parezca contradictorio (y allí reside la belleza de la idea), es ser "antinatural" por naturaleza.
-						</p>
-						<p>
-							Como seres humanos poseemos dos cualidades que nos diferencian de otras criaturas: la <span class="important">creatividad</span> y la <span class="important">curiosidad</span>. Esta anomalía en nosotros mismos es lo que ha dado origen al arte en todas sus formas conocidas, incluyendo la música y la computación, dos corrientes no solo en constante evolución sino altamente creativas.
-						</p>
-						<p>
-							Aunque parezca inusual me gusta comparar el proceso de escribir un algoritmo o diseñar una aplicación con el proceso de componer una canción, ya que son dos acciones muy creativas y personales, y puedo asegurar que será difícil encontrar dos personas en este mundo que al crear alguna de las dos sus procesos creativos o resultados sean el mismo. Ambos procesos creativos estan muy ligados a nuestra personalidad, nuestra forma de pensar, nuestras experiencias, conocimientos y formas de ver al mundo.
-						</p>
-						<p>
-							Admito que desde muy temprana edad tanto la música como la computación me apasionan pues han formado parte fundamental de mi vida, de mi día a día, los considero pilares y partes fundamentales de la sociedad actual.
-						</p>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<img src="img/me_playing.jpg" style="width: 100%;"/>
-					</div>
-				</div>
+				
 			</div>
     	</div>
     </div>
-
+    <div id="hobbies-container">
+		<div id="hobbies" class="container page-content">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Hobbies</h1>
+				</div>
+				<div class="col-xs-12 my_spacer"></div>
+				<div class="col-xs-12 datagrid">
+					<div class="col-md-6 col-xs-12 text-justify">
+						<h2>Hacer música</h2>
+						<p>
+							Sea en la ducha o en público, sólo o con mi banda de rock alternativo Rorchak <span class="emoji">\m/ (o . o) \m/</span>, con un envase de pirulin o un instrumento musical en la mano, me encanta aprovechar cada oportunidad para componer, versionar o ejecutar temas musicales y hacer del mundo un lugar un poco más alegre.
+						</p>
+						<p>
+							Espero poder compartir algo de este material con ustedes pronto <span class="emoji">;)</span>.
+						</p>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<img src="img/rorchak.jpg" style="width: 100%;"/>
+					</div>
+				</div>
+				<div class="col-xs-12 my_spacer"></div>
+				<div class="col-xs-12 datagrid">
+					<div class="col-md-6 col-xs-12">
+						<img src="img/coro.jpg" style="width: 100%;"/>
+					</div>
+					<div class="col-md-6 col-xs-12 text-justify">
+						<h2>Viajar</h2>
+						<p>
+							Conocer el mundo, sus lugares, culturas, paisajes y secretos. Agradezco a Dios cada oportunidad que tengo para recorrer nuevas tierras y descubrir que se encuentra más allá del horizonte.
+						</p>
+						
+					</div>
+					
+				</div>
+				<div class="col-xs-12 my_spacer"></div>
+			</div>
+		</div>
+	</div>		
 
 
 	<script src="js/jquery-2.2.4.min.js"></script>

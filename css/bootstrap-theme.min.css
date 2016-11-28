@@ -73,7 +73,7 @@ body {
 }
 
 .dropdown-menu>li>a{
-	color: #4f27b0;	
+	color: #4f27b0 !important;	
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{

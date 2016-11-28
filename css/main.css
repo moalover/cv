@@ -58,55 +58,122 @@
 	height: 15px;
 }
 
+/* ------------------ DATAGRIDS DEFAULT - Start ----------------*/
+
+.datagrid{
+	background-color: rgba(0,0,0,0.80);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
 
 
+
+@media (min-width: 768px) {
+	.datagrid .datagrid_element{
+		border-right: 1px solid #ffffff;
+	}
+
+	.datagrid .datagrid_element:last-of-type{
+		border-right: none;
+	}
+
+	.datagrid .datagrid_element.noborder{
+		border-right: none !important;
+	}
+}
+
+
+/* ------------------ DATAGRIDS DEFAULT -  End  ----------------*/
+
+/* ----------------------- BIO - Start ------------------------ */
 
 #bio-container{
 	background-color: black;
 	background-image: url("../img/caracas.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover
+    background-size:cover;
 }
 
 #bio-container #bio{
 	padding-top: 85px;
+	padding-bottom: 85px;
 }
+
+/* ----------------------- BIO -  End  ------------------------ */
+
+/* -------------------- EDUCATION - Start --------------------- */
 
 #education-container{
 	background-color: black;
 	background-image: url("../img/USB.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover
+    background-size:cover;
 }
 
-#experience-container, #education-dummy-container{
+#education-container #education{
+	padding-top: 85px;
+	padding-bottom: 85px;
+}
+
+/* -------------------- EDUCATION -  End  --------------------- */
+
+/* ------------------- EXPERIENCE - Start --------------------- */
+
+#experience-container{
 	background-color: black;
 	background-image: url("../img/office.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover
+    background-size:cover;
 }
 
-#experience-container #bio{
+#experience-container #experience{
 	padding-top: 85px;
+	padding-bottom: 85px;
+	color: #000000;
 }
 
-.datagrid{
-	background-color: #000000;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ffffff
+#experience-container #experience .datagrid{
+	background-color: rgba(255,255,255,0.80);
+}	
+
+@media (min-width: 768px) {
+	#experience-container #experience .datagrid{
+		border: 1px solid #000000;
+	}
+
+	#experience-container #experience .datagrid .datagrid_element{
+		border-right: 1px solid #000000;
+	}	
 }
 
-.datagrid .datagrid_element{
-	border-right: 1px solid #ffffff;
+
+/* ------------------- EXPERIENCE - End --------------------- */
+
+/* -------------------- EDUCATION - Start --------------------- */
+
+#hobbies-container{
+	background-color: black;
+	background-image: url("../img/margarita.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 }
 
-.datagrid .datagrid_element:last-of-type{
-	border-right: none;
+#hobbies-container #hobbies{
+	padding-top: 85px;
+	padding-bottom: 85px;
+	color: #000000;
 }
+
+#hobbies-container #hobbies .datagrid{
+	color: #ffffff;
+}
+
+/* -------------------- EDUCATION -  End  --------------------- */
 
 .my_spacer{
 	height: 25px;
